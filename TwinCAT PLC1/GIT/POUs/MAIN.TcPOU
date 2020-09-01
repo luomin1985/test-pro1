@@ -7,13 +7,17 @@ VAR
 	b:INT;
 	c:INT;
 	add1:FB_ADD;
+	
+	ton1:ton;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[add1(in1:=a , in2:=b , out=>c );]]></ST>
+      <ST><![CDATA[add1(in1:=a , in2:=b , out=>c );
+ton1(IN:= a, PT:=T#1s , Q=> , ET=> );]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="11" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
